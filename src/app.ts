@@ -1,22 +1,18 @@
-interface Topping {
-    toppings: string[]
-}
+class Pizza {
+    name: string;
+    toppings: string[] = [];
 
-interface Pizza extends Topping {
-    name: string,
-    getName() : string
-}
+    constructor(name: string) {
+        this.name = name;
+    }
 
-function createPizza(pizzaName: string, pizzaToppings: string[]): Pizza {
-    return {
-        name : pizzaName,
-        toppings : pizzaToppings,
-        getName() : string{
-            return this.name
-        }
+    addTopping = function(topping: string) {
+        this.toppings.push(topping);
     }
 }
 
-const pizza = createPizza("Pizza name", ["Topping 1", "Topping 2"]);
+const pizza = new Pizza("Pepporoni");
+pizza.addTopping("Bacon");
+pizza.addTopping("Cheese");
 
 console.log(pizza);
