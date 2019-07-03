@@ -1,9 +1,4 @@
-let coupon : any;
+let implicitCoupon = "Pizza Coupon";
+let explicitCoupon;
 
-coupon = 25;
-
-coupon = "Coupon";
-
-coupon = true;
-
-console.log(coupon);
+explicitCoupon = "Pizza Coupon";
