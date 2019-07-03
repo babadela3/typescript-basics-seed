@@ -1,12 +1,12 @@
 class Pizza {
-    name: string;
+    readonly name: string;
     toppings: string[] = [];
 
     constructor(name: string) {
         this.name = name;
     }
 
-    addTopping = function(topping: string) {
+    addTopping(topping: string)  {
         this.toppings.push(topping);
     }
 }
@@ -16,3 +16,4 @@ pizza.addTopping("Bacon");
 pizza.addTopping("Cheese");
 
 console.log(pizza);
+console.log(pizza.name);
