@@ -1,9 +1,5 @@
-let country: string = 'Romania';
-
-function setCountry(selectCountry : string): void {
-    country = selectCountry;
+function orderError(errorMessage: string): never {
+    throw Error(errorMessage);
 }
 
-setCountry('Germany');
-
-console.log(country);
+orderError('Error Message');
