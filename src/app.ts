@@ -1,6 +1,9 @@
-interface Pizza {
+interface Topping {
+    toppings: string[]
+}
+
+interface Pizza extends Topping {
     name: string,
-    toppings: string[],
     getName() : string
 }
 
