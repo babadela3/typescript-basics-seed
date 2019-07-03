@@ -1,3 +1,3 @@
-let numberArray : number[] = [1, 2, 3];
+let pizza : [string, number, boolean];
 
-let stringArray : Array<string> = ["Romania", "France"];
+pizza = ["Pepperoni", 34, true];
