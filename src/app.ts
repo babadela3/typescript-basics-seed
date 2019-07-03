@@ -1,3 +1,23 @@
+class Size {
+    constructor(private size: string) {}
+
+    set availableSize(size:  string) {
+        this.size = size;
+    }
+
+    get availableSize(): string {
+        return this.size;
+    }
+}
+
+const size = new Size('medium');
+
+console.log(size.availableSize);
+
+size.availableSize = 'small';
+
+console.log(size.availableSize);
+
 class Pizza {
     readonly name: string;
     toppings: string[] = [];
