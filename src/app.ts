@@ -1,5 +1,5 @@
 abstract class Size {
-    constructor(private size: string) {}
+    constructor(protected size: string) {}
 
     set availableSize(size:  string) {
         this.size = size;
@@ -19,6 +19,10 @@ class Pizza extends Size{
         this.name = name;
     }
 
+    public updateSize(size: string): void {
+        this.size = size;
+    }
+
     addTopping(topping: string)  {
         this.toppings.push(topping);
     }
@@ -27,6 +31,7 @@ class Pizza extends Size{
 const pizza = new Pizza("Pepporoni", "small");
 pizza.addTopping("Bacon");
 pizza.addTopping("Cheese");
+pizza.updateSize("big");
 
 console.log(pizza);
 console.log(pizza.name);
