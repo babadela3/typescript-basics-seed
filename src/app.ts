@@ -18,11 +18,12 @@ size.availableSize = 'small';
 
 console.log(size.availableSize);
 
-class Pizza {
+class Pizza extends Size{
     readonly name: string;
     toppings: string[] = [];
 
-    constructor(name: string) {
+    constructor(name: string, size: string) {
+        super(size);
         this.name = name;
     }
 
@@ -31,9 +32,10 @@ class Pizza {
     }
 }
 
-const pizza = new Pizza("Pepporoni");
+const pizza = new Pizza("Pepporoni", "small");
 pizza.addTopping("Bacon");
 pizza.addTopping("Cheese");
 
 console.log(pizza);
 console.log(pizza.name);
+console.log(pizza.availableSize);
