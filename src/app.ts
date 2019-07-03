@@ -1,9 +1,3 @@
-let pizza : {name : string, price : number, getName() : string} = {
-    name : "Pepperoni",
-    price : 33,
-    getName() {
-        return pizza.name;
-    }
-}
+let numberArray : number[] = [1, 2, 3];
 
-console.log(pizza.getName());
+let stringArray : Array<string> = ["Romania", "France"];
