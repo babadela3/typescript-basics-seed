@@ -1,5 +1,11 @@
-function orderError(errorMessage: string): never {
-    throw Error(errorMessage);
+let coupon: string = 'Coupon';
+
+function removeCoupon(): void {
+    coupon = null;
 }
 
-orderError('Error Message');
+console.log(coupon);
+
+removeCoupon();
+
+console.log(coupon);
