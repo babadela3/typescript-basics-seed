@@ -1,9 +1,7 @@
-let pizzaSize: string = 'small';
+let setTotalPrice : (price: number, quantity: number) => number;
 
-function setPizzaSize(pizza : 'small' | 'medium' | 'large') {
-    pizzaSize = pizza;
-}
+setTotalPrice = (x,y) => x * y;
 
-setPizzaSize('large');
+const sum = setTotalPrice(25, 6);
 
-console.log(pizzaSize);
+console.log(sum);
