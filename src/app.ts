@@ -1,4 +1,4 @@
-class Size {
+abstract class Size {
     constructor(private size: string) {}
 
     set availableSize(size:  string) {
@@ -9,14 +9,6 @@ class Size {
         return this.size;
     }
 }
-
-const size = new Size('medium');
-
-console.log(size.availableSize);
-
-size.availableSize = 'small';
-
-console.log(size.availableSize);
 
 class Pizza extends Size{
     readonly name: string;
