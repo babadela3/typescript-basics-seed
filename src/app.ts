@@ -1,14 +1,9 @@
-let setTotalPrice : (price: number, quantity?: number) => number;
-
-setTotalPrice = (x,y) => {
-    if(y) {
-        return x * y;
+let pizza : {name : string, price : number, getName() : string} = {
+    name : "Pepperoni",
+    price : 33,
+    getName() {
+        return pizza.name;
     }
-    else {
-        return x;
-    }
-};
+}
 
-const sum = setTotalPrice(21);
-
-console.log(sum);
+console.log(pizza.getName());
