@@ -1,4 +1,9 @@
-let implicitCoupon = "Pizza Coupon";
-let explicitCoupon;
+let country: string = 'Romania';
 
-explicitCoupon = "Pizza Coupon";
+function setCountry(selectCountry : string): void {
+    country = selectCountry;
+}
+
+setCountry('Germany');
+
+console.log(country);
