@@ -1,3 +1,8 @@
-let pizza : [string, number, boolean];
+type Size = 'small' | 'medium' | 'hard';
+type Callback = (size: Size) => void;
 
-pizza = ["Pepperoni", 34, true];
+let pizzaSize: Size = 'small';
+
+const setSize: Callback = (x) => pizzaSize = x;
+
+setSize('hard');
