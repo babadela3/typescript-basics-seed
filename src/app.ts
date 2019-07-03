@@ -1,7 +1,14 @@
-let setTotalPrice : (price: number, quantity: number) => number;
+let setTotalPrice : (price: number, quantity?: number) => number;
 
-setTotalPrice = (x,y) => x * y;
+setTotalPrice = (x,y) => {
+    if(y) {
+        return x * y;
+    }
+    else {
+        return x;
+    }
+};
 
-const sum = setTotalPrice(25, 6);
+const sum = setTotalPrice(21);
 
 console.log(sum);
