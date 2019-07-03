@@ -1,11 +1,9 @@
-let coupon: string = 'Coupon';
+let pizzaSize: string = 'small';
 
-function removeCoupon(): void {
-    coupon = null;
+function setPizzaSize(pizza : 'small' | 'medium' | 'large') {
+    pizzaSize = pizza;
 }
 
-console.log(coupon);
+setPizzaSize('large');
 
-removeCoupon();
-
-console.log(coupon);
+console.log(pizzaSize);

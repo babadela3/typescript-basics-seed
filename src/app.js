@@ -1,7 +1,7 @@
-var coupon = 'Coupon';
-function removeCoupon() {
-    coupon = null;
+"use strict";
+var pizzaSize = 'small';
+function setPizzaSize(pizza) {
+    pizzaSize = pizza;
 }
-console.log(coupon);
-removeCoupon();
-console.log(coupon);
+setPizzaSize('large');
+console.log(pizzaSize);
